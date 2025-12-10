@@ -67,7 +67,7 @@ def load_all(
     carts_df: pd.DataFrame,
     cart_items_df: pd.DataFrame
 ):
-
+ 
     logger.info("Iniciando carga no banco SQLite...")
 
     conn = get_connection()
