@@ -1,10 +1,9 @@
 Código de teste técnico
 
-
 Requisitos na máquina/Pod/Container/env:
 
 - Python 3.10.x a 3.11.x
-- SQLite ( qualquer versão)
+- SQLite (qualquer versão)
 - Pyarrow
 - Pandas
 

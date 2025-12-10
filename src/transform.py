@@ -111,21 +111,7 @@ def transform_carts(df: pd.DataFrame) -> pd.DataFrame:
 # CART ITEMS (EXPLODE)
 # =========================
 def transform_cart_items(df: pd.DataFrame) -> pd.DataFrame:
-    """
-    A estrutura do carts vem assim:
-    [
-      {
-        "id": 1,
-        "userId": 1,
-        "products": [
-            {"productId": 1, "quantity": 4}
-        ]
-      }
-    ]
 
-    Precisamos gerar:
-    cart_id | product_id
-    """
     logger.info("Transformando cart_items (explode)...")
 
     exploded = df[["id", "products"]].explode("products")

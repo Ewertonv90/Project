@@ -28,12 +28,12 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(mess
 logger = logging.getLogger("main")
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-DB_PATH = os.path.join(BASE_DIR, "data", "fakestore.db")
+DB_PATH = os.path.join(BASE_DIR, "data/trusted", "fakestore.db")
 ANALYTICS_SQL_PATH = BASE_DIR / "sql" / "analytics.sql"
 
 def execute_analytics_sql():
     logger.info("Criando VIEW analítica...")
-
+ 
     conn = sqlite3.connect(DB_PATH)
     try:
         with open(ANALYTICS_SQL_PATH, "r", encoding="utf-8") as f:
