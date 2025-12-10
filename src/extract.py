@@ -5,7 +5,7 @@ extract.py
 Uso:
 >>> from extract import extract_all
 >>> dfs = extract_all(save_raw=True)
-
+  
 Requisitos:
 pip install requests pandas pyarrow
 """
