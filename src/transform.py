@@ -141,7 +141,6 @@ def transform_cart_items(df: pd.DataFrame) -> pd.DataFrame:
     logger.info("Cart_items gerado: %d linhas", len(cart_items))
     return cart_items
 
-
 # =========================
 # PIPELINE DE TRANSFORMAÇÃO
 # =========================
